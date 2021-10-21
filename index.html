@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GiaoSuBot</title>
+    <link rel="shortcut icon" href="/logo.png" type="image/x-icon" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/fontawesome.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="//db.onlinewebfonts.com/c/721c73bcd2e49f3a621991089838b503?family=Euclid+Circular+B+Medium"
+      rel="stylesheet"
+      type="text/css"
+    />
+  </head>
+
+  <body>
+    <section class="main">
+      <!-- Navbar -->
+      <nav
+        class="navbar"
+        style="
+          overflow: hidden;
+          position: fixed; /* Set the navbar to fixed position */
+          top: 0; /* Position the navbar at the top of the page */
+          width: 100%;
+          z-index: 100;
+          background: rgba(255, 255, 255, 0.35);
+          box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+          backdrop-filter: blur(9px);
+          -webkit-backdrop-filter: blur(9px);
+          border: 1px solid rgba(255, 255, 255, 0.18);
+          height: 10%;
+        "
+      >
+        <div class="container-fluid">
+          <a
+            class="navbar-brand"
+            href="#"
+            style="
+              color: white;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            "
+          >
+            GiaoSuBot
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="d-flex nav-links">
+            <div class="d-flex justify-content-center">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="/"
+                style="color: white"
+                >Home</a
+              >
+              <a class="nav-link" href="#features" style="color: white"
+                >Features</a
+              >
+            </div>
+          </div>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#features">Features</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- End Navbar -->
+
+      <!-- Hero entry 👌 -->
+      <div class="hero" style="height: 100vh; width: 100%">
+        <div
+          id="hero"
+          class="text-center"
+          style="position: relative; top: 50%; transform: translateY(-50%)"
+        >
+          <h1>GiaoSuBot</h1>	
+          <p>
+            An advanced discord music bot, supports SoundCloud, YouTube
+            with Shuffling, Volume Control!
+          </p>
+		  <a href="https://discord.com/oauth2/authorize?client_id=855663850509828106&permissions=70282305&scope=bot">
+		  <button  class="add_to_discord" style="background-color: 	#FFB6C1;border-radius: 10px;border: none;"><svg width="40" height="45" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.51429 0.416748H26.4857C28.4229 0.416748 30 1.98841 30 3.93591V34.5834L26.3143 31.3376L24.24 29.4242L22.0457 27.3913L22.9543 30.5517H3.51429C1.57714 30.5517 0 28.9801 0 27.0326V3.93591C0 1.98841 1.57714 0.416748 3.51429 0.416748ZM18.7371 21.3438C19.2514 21.993 19.8686 22.7276 19.8686 22.7276C23.6571 22.608 25.1143 20.1309 25.1143 20.1309C25.1143 14.6301 22.6457 10.1713 22.6457 10.1713C20.1771 8.32633 17.8286 8.37758 17.8286 8.37758L17.5886 8.65091C20.5029 9.53925 21.8571 10.8205 21.8571 10.8205C20.0743 9.84675 18.3257 9.36841 16.6971 9.1805C15.4629 9.04383 14.28 9.078 13.2343 9.21466C13.1445 9.21466 13.0678 9.22768 12.9813 9.24236C12.9687 9.24449 12.9559 9.24666 12.9429 9.24883C12.3429 9.30008 10.8857 9.52216 9.05143 10.3251C8.41714 10.6155 8.04 10.8205 8.04 10.8205C8.04 10.8205 9.46286 9.47091 12.5486 8.58258L12.3771 8.37758C12.3771 8.37758 10.0286 8.32633 7.56 10.1713C7.56 10.1713 5.09143 14.6301 5.09143 20.1309C5.09143 20.1309 6.53143 22.608 10.32 22.7276C10.32 22.7276 10.9543 21.9588 11.4686 21.3097C9.29143 20.6605 8.46857 19.2938 8.46857 19.2938C8.46857 19.2938 8.64 19.4134 8.94857 19.5842C8.96571 19.6013 8.98286 19.6184 9.01714 19.6355C9.04286 19.6526 9.06857 19.6654 9.09429 19.6782C9.12 19.691 9.14571 19.7038 9.17143 19.7209C9.6 19.9601 10.0286 20.148 10.4229 20.3017C11.1257 20.5751 11.9657 20.8484 12.9429 21.0363C14.2286 21.2755 15.7371 21.3609 17.3829 21.0534C18.1886 20.9167 19.0114 20.6776 19.8686 20.3188C20.4686 20.0967 21.1371 19.7722 21.84 19.3109C21.84 19.3109 20.9829 20.7117 18.7371 21.3438ZM10.1487 16.6458C10.1487 15.6037 10.9201 14.7495 11.8973 14.7495C12.8744 14.7495 13.663 15.6037 13.6458 16.6458C13.6458 17.6878 12.8744 18.542 11.8973 18.542C10.9373 18.542 10.1487 17.6878 10.1487 16.6458ZM16.4058 16.6458C16.4058 15.6037 17.1773 14.7495 18.1544 14.7495C19.1315 14.7495 19.903 15.6037 19.903 16.6458C19.903 17.6878 19.1315 18.542 18.1544 18.542C17.1944 18.542 16.4058 17.6878 16.4058 16.6458Z" fill="white"></path></svg> Add To Discord</button>
+			</a>
+ </div>
+      </div>
+      <!-- End Hero -->
+
+      <!-- Features -->
+      <div id="features" class="section-features">
+        <div class="container">
+          <div class="row justify-content-center text-center">
+            <div class="col-md-10 col-lg-8">
+              <div class="header-section">
+                <h2 class="title-features">Exclusive <span>Features</span></h2>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="single-service">
+                <div class="part-1">
+                  <i class="fab fa-spotify"></i> <i class="fab fa-youtube"></i>
+                  <i class="fab fa-soundcloud"></i>
+                  <h3 class="title">Sound Cloud, YouTube Support</h3>
+                </div>
+                <div class="part-2">
+                  <p class="description">
+                    Use your spotify playlist, youtube videos, youtube playlists
+                    and much more using this bot
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="single-service">
+                <div class="part-1">
+                  <i class="fas fa-music"></i>
+                  <h3 class="title">Lag free music</h3>
+                </div>
+                <div class="part-2">
+                  <p class="description">
+                    Bot never lags while playing a song in a voice channel
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="single-service">
+                <div class="part-1">
+                  <i class="fas fa-sliders-h"></i>
+                  <h3 class="title">More powerful feature</h3>
+                </div>
+                <div class="part-2">
+                  <p class="description">
+                    Control your song looping song or queue, You can even change
+                    server prefix and server dj role
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Features -->
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="copyright-text">
+                <p>
+                  © 2021
+                  <a href="#"
+                    >GiaoSuBot</a
+                  >. All rights reserved. Made by
+                  <a href="#">GiaoSu#0719</a>
+				  Contact: contact@phcstudio.tk
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Footer -->
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  </body>
+  <style>
+    @font-face {
+      font-family: "Euclid Circular B Medium";
+      src: url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.eot");
+      src: url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.eot?#iefix")
+          format("embedded-opentype"),
+        url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.woff2")
+          format("woff2"),
+        url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.woff")
+          format("woff"),
+        url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.ttf")
+          format("truetype"),
+        url("//db.onlinewebfonts.com/t/721c73bcd2e49f3a621991089838b503.svg#Euclid Circular B Medium")
+          format("svg");
+    }
+
+    body {
+      background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+      color: #fff;
+      font-family: "Euclid Circular B Medium", Poppins;
+    }
+
+    .navbar-toggler {
+      display: none;
+    }
+
+    .hero {
+      margin-top: 5%;
+    }
+
+    .commands {
+      margin-top: 100px;
+      padding-top: 110px;
+      padding-bottom: 120px;
+    }
+
+    .commands .title {
+      position: relative;
+      padding-bottom: 25px;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: white;
+    }
+
+    @media only screen and (max-width: 630px) {
+      .navbar-toggler {
+        display: inherit;
+      }
+
+      .nav-links {
+        display: none !important;
+      }
+    }
+
+    #features {
+      margin-top: 100px;
+    }
+
+    .title-features {
+      color: white;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .section-features {
+      padding-top: 110px;
+      padding-bottom: 120px;
+      color: white;
+    }
+
+    .title {
+      background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      text-decoration: none;
+    }
+
+    .section-features .header-section {
+      margin-bottom: 35px;
+    }
+
+    .section-features .header-section .title {
+      position: relative;
+      margin-bottom: 40px;
+      padding-bottom: 25px;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+
+    .section-features .header-section .title:before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 140px;
+      height: 1px;
+      background-color: #f70037;
+    }
+
+    .section-features .header-section .title:after {
+      content: "";
+      position: absolute;
+      bottom: -1px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 45px;
+      height: 3px;
+      background-color: #f70037;
+    }
+
+    .section-features .header-section .title span {
+      color: #f70037;
+    }
+
+    .section-features .header-section .description {
+      color: #6f6f71;
+    }
+
+    .section-features .single-service {
+      margin-top: 40px;
+      background: rgba(255, 255, 255, 0.35);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(9px);
+      -webkit-backdrop-filter: blur(9px);
+      border-radius: 10px;
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .section-features .single-service .part-1 {
+      padding: 40px 40px 25px;
+      border-bottom: 2px solid #1d1e23;
+    }
+
+    .section-features .single-service .part-1 i {
+      margin-bottom: 25px;
+      font-size: 50px;
+      color: #f70037;
+    }
+
+    .section-features .single-service .part-1 .title {
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+      line-height: 1.8em;
+    }
+
+    .section-features .single-service .part-2 {
+      padding: 30px 40px 40px;
+    }
+
+    .section-features .single-service .part-2 .description {
+      margin-bottom: 22px;
+      color: white;
+      font-size: 14px;
+      line-height: 1.8em;
+    }
+
+    .section-features .single-service .part-2 a {
+      color: #fff;
+      font-size: 14px;
+      text-decoration: none;
+    }
+
+    .section-features .single-service .part-2 a i {
+      margin-right: 10px;
+      color: #f70037;
+    }
+
+    .footer {
+      padding: 32px 0;
+      position: absolute;
+      width: 100%;
+      background-color: red;
+      color: white;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.5);
+      box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+      backdrop-filter: blur(9px);
+      -webkit-backdrop-filter: blur(9px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+    }
+
+    .footer p {
+      margin: 0;
+      line-height: 26px;
+      font-size: 15px;
+      color: #fff;
+    }
+
+    .footer p a {
+      background: linear-gradient(to right, #8a2387, #e94057, #f27121);
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+      text-decoration: none;
+    }
+
+    .footer p a:hover {
+      color: white;
+    }
+  </style>
+</html>
